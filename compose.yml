@@ -1,0 +1,8 @@
+services:
+  rtorrent:
+    build:
+      context: .
+    container_name: rtorrent
+    volumes:
+      - ./mnt/config:/config
+      - ./mnt/downloads:/downloads
