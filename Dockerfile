@@ -45,9 +45,7 @@ RUN echo "**** install packages ****" && \
 
 COPY . .
 
-RUN echo "**** converting CRLF to LF ****" && \
-    find . -type f -exec sed -i 's/\r$//' {} \; && \
-    echo "**** build rtorrent ****" && \
+RUN echo "**** build rtorrent ****" && \
     autoreconf -i && \
     ./configure --prefix=/tmp/build --with-xmlrpc-c && \
     make -j && \
