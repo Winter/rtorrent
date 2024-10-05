@@ -8,4 +8,4 @@ export LOG_DIR="/config/logs/"
 mkdir -p /config
 cp -n /etc/rtorrent/rtorrent.rc /config/rtorrent.rc
 
-exec /usr/bin/rtorrent -n -o import=/config/rtorrent.rc 
+exec /usr/bin/rtorrent -n -o import=/config/rtorrent.rc

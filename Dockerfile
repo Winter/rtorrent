@@ -73,4 +73,6 @@ RUN echo "**** install packages ****" && \
 COPY doc/rtorrent.rc-docker /etc/rtorrent/rtorrent.rc
 COPY entrypoint.sh /entrypoint.sh
 
+RUN chmod +x /entrypoint.sh
+
 CMD ["./entrypoint.sh"]

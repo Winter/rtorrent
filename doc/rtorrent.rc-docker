@@ -87,8 +87,8 @@ schedule2 = watch_load, 11, 10, ((load.verbose, (cat, (cfg.watch), "load/*.torre
 # Run the rTorrent process as a daemon in the background
 # (and control via XMLRPC sockets)
 system.daemon.set = true
-network.scgi.open_local = (cat,"/config/rtorrent.socket")
-execute.nothrow = chmod,777,(cat,"/config/rtorrent.socket")
+network.scgi.open_local = /config/rtorrent.socket
+execute.nothrow = chmod,777,/config/rtorrent.socket
 
 # Logging:
 #   Levels = critical error warn notice info debug
